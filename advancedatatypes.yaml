@@ -1,0 +1,84 @@
+student: !!seq
+- marks
+- name
+- roll_no
+#can be written like this also
+cities: [new delhi,mumbai]
+
+#some of the keys of the sequence mqy be empty
+#sparse seq
+sparse seq:
+- hey
+- hii
+- 
+- null
+- whatsup
+
+#nested sequence
+-
+ - apple
+ - mango
+ - banana
+-
+ - new delhi
+ - mumbai
+
+#key: value pairs are called maps
+!!map
+#nested mappings: map within an map
+name: vaibhav malhotra
+role:
+ age: 89
+ job: Student
+
+#same as
+name: vaibhav Malhotra
+role: {age: 89,job: Student}
+
+#pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+- job: student
+- job: developer
+#an array of hash tables
+
+# !!set will allow you to have unique values
+names: !!set
+? kunal
+? vaibvhav
+? jason
+
+# dictionary !!omap
+people: !!omap
+ - Vaibhav:
+    name: Vaibhav Malhotra
+    age: 20
+    height: 678
+ - Kunal:
+    name: Kunal Chauhan
+    age: 21
+    height: 670
+
+#reusing some properties using anchors
+likings: &likes
+ fav fruit: mango
+ dislikes: grapes
+
+person1:
+ name: Vaibhav Malhotra
+ <<: *likes
+
+person2:
+ name: Kunal
+ <<: *likes
+ dislikes: Berries
+ 
+person3:
+ name: dev
+ fav fruit: mango
+ dislikes: grapes
+
+   
+   
+  

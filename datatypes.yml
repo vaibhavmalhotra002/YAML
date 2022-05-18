@@ -1,0 +1,52 @@
+#String variables
+name: Vaibhav Malhotra
+fruit: "apple"
+job: 'swe'
+
+bio: |      # | is used when we want to add more than 1 lines 
+hey my name is vaibhav
+i like to code.
+
+#Write a single line in multiple lines
+message: > 
+this will 
+all be in 
+a single line
+#same as 
+message: this will all be in a single line
+
+#int
+number: 5473
+#float
+marks: 45.7
+#boolean
+boolean value: No #n, N, false,False,FALSE
+
+# specify the type
+zero: !!int 0
+positivenum: !!int 45
+negativenum: !!int -45
+binarynum: !!int 0b1101
+octalnum: !!int 06574
+hexa: !!int 0x45
+commavalue: !!int +540_000 #540,000
+exponential numbers: 6.023E56
+
+#floating point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+boolean: !!bool no
+
+#null
+surname: !!null Null 
+~: this is null key
+
+#dates and time
+date: !!timestamp 2002-12-14
+indian time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10
+
+
+
+

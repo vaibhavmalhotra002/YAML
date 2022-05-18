@@ -1,0 +1,21 @@
+# KEY DATATYPE
+#apple is the key and I am a fruit represents its value
+"apple" : "I am a red fruit"
+1: "this is my roll number"
+--- #differentiate between documents
+#lists
+- apple
+- mango
+- banana
+- Apple
+---
+#Block styles
+cities:
+- new delhi
+- mumbai
+- amritsar
+---
+cities: [new delhi, mumbai]
+---
+{mango: "Yellow fruit",age:45}
+... #end of file
